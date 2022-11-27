@@ -1,15 +1,16 @@
 import React, {useState} from "react";
 import { SliderData } from "./SliderData";
 import * as FaIcons from 'react-icons/fa';
+import * as IoIosIcons from 'react-icons/io';
 import styled from 'styled-components';
 import './ImageSlider.css';
 
 const slider = styled.div`
-    position : relative;
     height : 100vh;
     display : flex;
     justify-content : center;
     align-items : center;
+    width: 100%;
     `;
 
 
@@ -32,9 +33,9 @@ const ImageSlider = ({ slides }) => {
     }
 
     return (
-        <section className="slider">
-            <FaIcons.FaArrowAltCircleLeft className="left-arrow" onClick={prevSlide}/>
-            <FaIcons.FaArrowAltCircleRight className="right-arrow" onClick={nextSlide}/>
+        <div className="slider">
+            <IoIosIcons.IoIosArrowDropleft className="left-arrow" onClick={prevSlide}/>
+            <IoIosIcons.IoIosArrowDropright className="right-arrow" onClick={nextSlide}/>
         {SliderData.map((slide, index) => {
             return (
                 <div className={index === current ? 'slide active' : 'slide'} key={index}>
@@ -42,7 +43,7 @@ const ImageSlider = ({ slides }) => {
                 </div>
             )
         })}
-        </section>
+        </div>
     )
 }
 

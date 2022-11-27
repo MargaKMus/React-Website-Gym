@@ -1,5 +1,5 @@
 .Profile{
-    width: 300px;
+    width: 100%;
     height: 480;
     background: white;
     border-radius: 10px;
@@ -8,7 +8,7 @@
 
 .upper-container{
     height: 100px;
-    background: purple;
+    background: #242424;
 }
 
 .image-container img{
@@ -17,11 +17,10 @@
     height: 100px;
     border-radius: 50%;
     padding: 5px;
-    transform: translate(95px, 45px);
-}
+    margin-left: 5%;
+    margin-top: 45px;
+    border:2px solid #242424;
 
-img{
-    border:2px solid purple;
 }
 
 .lower-container{
@@ -29,7 +28,7 @@ img{
     height: 300px;
     background: white;
     text-align: center;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .lower-container h3,h4,p{
@@ -38,15 +37,22 @@ img{
 }
 
 .lower-container h3{
-    color: purple;
+    color: #242424;
     font-weight: 600;
     font-size: 1.5rem;
 }
 
 .lower-container h4{
-    color: purple;
+    color: #242424;
     font-weight: 700;
     font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.lower-container span{
+    color: #242424;
+    font-weight: 700;
+    font-size: 0.9rem;
 }
 
 .lower-container p{
@@ -54,31 +60,26 @@ img{
     color: black;
     font-weight: 300;
     font-size: 0.9rem;
-    text-align: justify;
+    text-align: center;
 }
 
-button{
+.lower-container button{
     margin: 1rem;
-    margin-top: 0;
-    color: purple;
+    margin-top: 20px;
+    color: #242424;
     font: bold;
     background-color: white;
-    border: 2px solid purple;
+    border: 2px solid #242424;
     padding: 0.6rem;
     border-radius: 6px;
     transition-duration: 0.5s;
     animation: ease-in-out;
 }
 
-button:hover{
-    background: purple;
+.lower-container button:hover{
+    background: #242424;
     transform: scale(1.2);
     border:none;
     color: white;
 }
 
-.lower-container span{
-    color: purple;
-    font-weight: 700;
-    font-size: 0.9rem;
-}
